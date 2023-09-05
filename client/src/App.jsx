@@ -1,9 +1,15 @@
+import Canvas from './canvas';
+import Home from './pages/Home';
+import Customizer from './pages/Customizer';
+
 function App() {
   return (
-    <div>
-      <h1 className="head-text">3D Shirts</h1>
-    </div>
+    <main className='app transition-all ease-in'>
+        <Home />
+        <Canvas/>
+        <Customizer/>
+    </main>
   );
 }
 
-export default App
+export default App;
