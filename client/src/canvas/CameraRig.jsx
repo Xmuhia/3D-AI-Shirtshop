@@ -1,8 +1,16 @@
-import React from 'react'
+import React, { Children } from 'react';
+import { useFrame } from '@react-three/fiber';
+import { easing } from 'maath';
+import { useSnapshot } from 'valtio';
 
-const CameraRig = () => {
+import state from '../store';
+
+
+const CameraRig = ({children}) => {
   return (
-    <div>CameraRig</div>
+    <group>
+      {children}
+    </group>
   )
 }
 
